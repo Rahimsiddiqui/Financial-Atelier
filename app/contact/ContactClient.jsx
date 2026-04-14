@@ -98,11 +98,7 @@ export default function ContactClient() {
         },
       );
 
-      console.log(res);
-
       const result = await res.json();
-
-      console.log(result);
 
       if (!res.ok) {
         let errorMessage = result.error || "Failed to send message.";

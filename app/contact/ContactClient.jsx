@@ -40,7 +40,6 @@ const init = () => {
     turnstileRef.current &&
     !widgetIdRef.current
   ) {
-    window.turnstile.ready(() => {
       if (!widgetIdRef.current) {
         widgetIdRef.current = window.turnstile.render(
           turnstileRef.current,
@@ -52,7 +51,6 @@ const init = () => {
           }
         );
       }
-    });
 
     clearInterval(interval);
   }

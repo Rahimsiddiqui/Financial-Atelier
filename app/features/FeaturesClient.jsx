@@ -25,7 +25,7 @@ export default function FeaturesClient() {
       title="Built to"
       highlightedWord="Simplify"
       titleSuffix="Your Finances"
-      description="Where precision meets intuition. Experience a suite of tools designed to curate your wealth with the same care as a master craftsman."
+      description="Explore Financial Atelier's features: Real-time expense tracking, spending pattern analysis, and personal wealth management tools designed for clarity and control."
       includesCTA={true}
       CTATitle="Ready to curate your wealth?"
       CTADescription="Join the new era of sophisticated finance. Sign up now and experience the art of financial curation with Financial Atelier."

@@ -23,7 +23,7 @@ export default function Page() {
       url: "https://financialatelier.vercel.app",
       sameAs: [
         "https://github.com/Rahimsiddiqui/financialatelier",
-        "https://x.com/rahimdeveloper",
+        "https://x.com/FinanceAtelier",
         "https://linkedin.com/in/rahimdeveloper",
       ],
     },

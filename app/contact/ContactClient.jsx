@@ -263,12 +263,12 @@ export default function ContactClient() {
                 <SiX className="w-5 h-5" />
               </div>
               <a
-                href="https://x.com/rahimdeveloper"
+                href="https://x.com/FinanceAtelier"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="text-secondary/80 text-[0.8rem] md:text-[0.85rem] font-manrope font-bold hover:text-primary transition-colors"
               >
-                @RahimDeveloper
+                @FinanceAtelier
               </a>
             </m.li>
 

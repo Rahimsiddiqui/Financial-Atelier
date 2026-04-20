@@ -28,18 +28,22 @@ Master your wealth with Financial Atelier. Experience an editorial approach to e
 ## Getting Started
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/Rahimsiddiqui/financialatelier.git
 cd financialatelier
 ```
 
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Configure environment variables
+
 Create a `.env` file in the root directory:
+
 ```bash
 # Services
 EMAILJS_SERVICE_ID=your_service_id
@@ -54,18 +58,22 @@ UPSTASH_REDIS_REST_URL=your_upstash_url
 UPSTASH_REDIS_REST_TOKEN=your_upstash_token
 
 # Backend URL (Local Dev)
-NEXT_PUBLIC_BACKEND_URL=http://localhost:5174
+NEXT_PUBLIC_BACKEND_URL=http://localhost:5000
 ```
 
 ### 4. Run the development environment
+
 Start both the Next.js frontend and the local Express backend:
+
 ```bash
 npm run dev:all
 ```
+
 - Frontend: [http://localhost:3000](http://localhost:3000)
-- Backend: [http://localhost:5174](http://localhost:5174)
+- Backend: [http://localhost:5000](http://localhost:5000)
 
 ---
 
 ## License
+
 &copy; 2026 Financial Atelier | All rights reserved.

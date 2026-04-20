@@ -50,20 +50,20 @@ export default function AuthClient() {
               Financial Atelier
             </Link>
 
-            <h1 className="font-bold font-manrope text-[2.5rem] sm:text-[3.2rem] md:text-[2.8rem] leading-tight mt-11 mb-9 sm:mb-8.5 text-center md:text-left">
+            <h1 className="font-bold text-white dark:text-white/90 font-manrope text-[2.5rem] sm:text-[3.2rem] md:text-[2.8rem] leading-tight mt-11 mb-9 sm:mb-8.5 text-center md:text-left">
               {mode === "login"
                 ? "Precision in every transaction."
                 : "Start your financial journey."}
             </h1>
 
-            <p className="text-lg leading-relaxed text-neutral/90 text-center max-w-xl mx-auto md:text-left">
+            <p className="text-lg text-medium leading-relaxed text-white/90 text-center max-w-xl mx-auto md:text-left">
               {mode === "login"
                 ? "Experience a digital concierge for your wealth, balancing legacy authority with fluid intuition."
                 : "Elevate your perspective with bespoke wealth management tools designed for the modern curator."}
             </p>
 
             <ul className="flex flex-col gap-3 mx-auto md:mx-0 max-w-fit mt-10 sm:mt-12 md:mt-10">
-              <li className="text-[0.9rem] flex gap-3 items-center font-semibold text-neutral/95">
+              <li className="text-[0.9rem] flex gap-3 items-center font-semibold text-white/95">
                 <div className="p-1.5 rounded-full bg-blue-500/80">
                   <Check className="w-4 h-4" />
                 </div>
@@ -72,7 +72,7 @@ export default function AuthClient() {
                   : "Automated Wealth Tracking"}
               </li>
 
-              <li className="text-[0.9rem] flex gap-3 items-center font-semibold text-neutral/95">
+              <li className="text-[0.9rem] flex gap-3 items-center font-semibold text-white/95">
                 <div className="p-1.5 rounded-full bg-blue-500/80">
                   <Check className="w-4 h-4" />
                 </div>
@@ -81,7 +81,7 @@ export default function AuthClient() {
                   : "Bespoke Budgeting Tools"}
               </li>
 
-              <li className="text-[0.9rem] flex gap-3 items-center font-semibold text-neutral/95">
+              <li className="text-[0.9rem] flex gap-3 items-center font-semibold text-white/95">
                 <div className="p-1.5 rounded-full bg-blue-500/80">
                   <Check className="w-4 h-4" />
                 </div>
@@ -98,7 +98,7 @@ export default function AuthClient() {
               alt="Tru of Grid PFP"
             />
 
-            <div className="flex flex-col gap-2 pl-1">
+            <div className="flex flex-col gap-2 pl-1 text-white dark:text-white/90">
               <p className="italic">
                 &quot;The clarity I&apos;ve been looking for in private
                 banking.&quot;
@@ -227,9 +227,12 @@ export default function AuthClient() {
           </div>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-5.5 sm:gap-7">
-            <button className="flex gap-2.5 justify-center items-center border border-border bg-none py-4 px-6 font-bold w-full font-manrope rounded-xl transition-colors duration-200 hover:bg-surface-highlight/80 cursor-pointer">
+            <a
+              href="/api/auth/google"
+              className="flex gap-2.5 justify-center items-center border border-border bg-none py-4 px-6 font-bold w-full font-manrope rounded-xl transition-colors duration-200 hover:bg-surface-highlight/80 cursor-pointer"
+            >
               <FcGoogle className="w-6 h-6" /> Google
-            </button>
+            </a>
 
             <button className="flex gap-2.5 justify-center items-center border border-border bg-none py-4 px-6 font-bold w-full font-manrope rounded-xl transition-colors duration-200 hover:bg-surface-highlight/80 cursor-pointer">
               <BsGithub className="w-6 h-6" /> Github
@@ -261,7 +264,7 @@ export default function AuthClient() {
               Don&apos;t have an account?{" "}
               <Link
                 href="/auth?mode=signup"
-                className="text-primary/80 hover:text-primary/90 transition-colors duration-200 opacity-100 cursor-pointer font-semibold"
+                className="text-primary/90 hover:text-primary transition-colors duration-200 opacity-100 cursor-pointer font-semibold"
               >
                 Sign Up
               </Link>{" "}
@@ -272,7 +275,7 @@ export default function AuthClient() {
               Have an account?{" "}
               <Link
                 href="/auth?mode=login"
-                className="text-primary/80 hover:text-primary/90 transition-colors duration-200 opacity-100 cursor-pointer font-semibold"
+                className="text-primary/90 hover:text-primary transition-colors duration-200 opacity-100 cursor-pointer font-semibold"
               >
                 Login
               </Link>{" "}

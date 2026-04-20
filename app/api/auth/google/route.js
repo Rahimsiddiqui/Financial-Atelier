@@ -8,9 +8,7 @@ export async function GET(req) {
   const state = globalThis.crypto.randomUUID();
 
   // encode mode into state safely
-  const stateData = Buffer.from(JSON.stringify({ state, mode })).toString(
-    "base64",
-  );
+  const stateData = btoa(JSON.stringify({ state, mode }));
 
   const url = new URL("https://accounts.google.com/o/oauth2/v2/auth");
 

@@ -11,7 +11,7 @@ export async function GET(req) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 
-  const decoded = JSON.parse(Buffer.from(stateEncoded, "base64").toString());
+  const decoded = JSON.parse(atob(stateEncoded));
 
   const storedState = req.cookies.get("oauth_state")?.value;
 

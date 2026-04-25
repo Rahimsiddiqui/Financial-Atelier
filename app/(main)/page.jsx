@@ -1,13 +1,17 @@
-import { Wallet } from "lucide-react";
-import Image from "next/image";
-import Script from "next/script";
-
 // Components
 import Boilerplate from "@/components/Boilerplate";
 import FadeUp from "@/components/FadeUp";
+import dynamic from "next/dynamic";
 
 // Client side component
-import LandingPageStats from "./LandingPageStats";
+const LandingPageStats = dynamic(() => import("./LandingPageStats"), {
+  loading: () => <div className="h-20" />,
+});
+
+// Third party imports
+import { Wallet } from "lucide-react";
+import Image from "next/image";
+import Script from "next/script";
 
 export const metadata = {
   title: "Expense Tracker & Budgeting Tool",

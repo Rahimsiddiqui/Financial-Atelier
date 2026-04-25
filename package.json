@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.5%"
+  ],
   "dependencies": {
-    "@fontsource/inter": "^5.2.8",
-    "@fontsource/manrope": "^5.2.8",
     "@upstash/ratelimit": "^2.0.8",
     "@upstash/redis": "^1.37.0",
     "@vercel/analytics": "^2.0.1",

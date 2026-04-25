@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/context/ThemeContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import { Inter, Manrope } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
@@ -50,9 +51,21 @@ export const metadata = {
   },
 };
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
       <head>
         <Script
           src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad"

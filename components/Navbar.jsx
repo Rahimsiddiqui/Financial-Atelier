@@ -70,15 +70,18 @@ export default function Navbar() {
     if (!sheetRef.current) return;
 
     const deltaY = e.changedTouches[0].clientY - dragStartYRef.current;
-    const sheetHeight = sheetRef.current.offsetHeight;
-    const shouldClose = deltaY > sheetHeight * 0.3;
 
-    if (shouldClose) setIsMenuOpen(false);
+    requestAnimationFrame(() => {
+      const sheetHeight = sheetRef.current.offsetHeight;
+      const shouldClose = deltaY > sheetHeight * 0.3;
 
-    sheetRef.current.style.transition = "transform 0.3s ease";
-    sheetRef.current.style.transform = shouldClose
-      ? "translateY(100%)"
-      : "translateY(0)";
+      if (shouldClose) setIsMenuOpen(false);
+
+      sheetRef.current.style.transition = "transform 0.3s ease";
+      sheetRef.current.style.transform = shouldClose
+        ? "translateY(100%)"
+        : "translateY(0)";
+    });
   };
 
   return (

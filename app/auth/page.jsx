@@ -11,8 +11,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Components
-import FadeUp from "@/components/FadeUp";
 import AuthFormClient from "./AuthFormClient";
+import FadeUp from "@/components/FadeUp";
 
 const validModes = ["login", "signup"];
 
@@ -33,7 +33,7 @@ function AuthContent() {
         <motion.div
           layout
           transition={{ type: "spring", stiffness: 120, damping: 18 }}
-          className={`bg-blue-600 hidden md:flex py-12 pb-23 md:pb-10 px-8 sm:px-10 lg:px-16 flex flex-col justify-between gap-20
+          className={`bg-blue-600 hidden md:flex py-12 pb-23 md:pb-10 px-8 sm:px-10 lg:px-16 flex-col justify-between gap-20
           rounded-t-4xl md:rounded-t-none
           ${
             isLogin

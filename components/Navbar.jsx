@@ -269,6 +269,7 @@ export default function Navbar() {
                           title={user?.name}
                           width={40}
                           height={40}
+                          priority
                         />
                       ) : (
                         <div className="w-10 h-10 font-bold flex justify-center items-center text-xl rounded-full bg-linear-to-r from-blue-500/60 to-primary/80 font-manrope text-white">
@@ -331,8 +332,9 @@ export default function Navbar() {
                   src={user?.image}
                   alt={user?.name}
                   title={user?.name}
-                  width={36}
+                  width={40}
                   height={36}
+                  priority
                 />
               ) : (
                 <div className="w-10 h-10 font-bold flex justify-center items-center text-xl rounded-full bg-linear-to-r from-blue-500/60 to-primary/80 font-manrope text-white">
